@@ -8,17 +8,13 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
+        height: 200px;
+        width: 200px;
       }
     </style>
   </head>
   <body>
+    <p>Test</p>
     <div id="map"></div>
     <script>
       // Note: This example requires that you consent to location sharing when
@@ -62,13 +58,13 @@
         }
       }
 
-      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+      /*function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
         infoWindow.setContent(browserHasGeolocation ?
                               'Error: The Geolocation service failed.' :
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
-      }
+      }*/
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdPJqw_Exi0ILRRwsibtPaG3glvH4Kb24&callback=initMap">
