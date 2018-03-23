@@ -2,11 +2,13 @@
 	"easy":[
 		{
 			"lat": 42.340525,
-			"lng": -71.094557
+			"lng": -71.094557,
+			"message": "This is the message"
 		},
 		{
 			"lat":42.340558,
-			"lng":-71.088446
+			"lng":-71.088446,
+			"message": "What a message!"
 		}
 	],
 	"medium":[
