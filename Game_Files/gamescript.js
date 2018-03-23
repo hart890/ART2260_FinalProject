@@ -20,7 +20,8 @@ function initMap() {
       addressControl: false,
       linksControl: false,
       clickToGo: false,
-      scrollWheel: false
+      scrollWheel: false,
+      showRoadLabels: false
     }
   );
   if (navigator.geolocation) {
