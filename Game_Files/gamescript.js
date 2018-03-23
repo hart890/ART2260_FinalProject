@@ -1,4 +1,6 @@
-var pano,pos,places;
+var pano,places,distanceLat,distanceLng,diff;
+var distance = {};
+var pos = {};
 var viewNum = 0;
 function preload(){
 places = loadJSON("places.json");
@@ -6,6 +8,7 @@ places = loadJSON("places.json");
 function setup(){
   print("done");
 }
+
 function initMap() {
   pano = new google.maps.StreetViewPanorama(
     document.getElementById('pano'), {
@@ -48,15 +51,18 @@ function backHome(){
 }
 
 function easyPos(){
-  pano.setPosition(places.easy[viewNum]);
+  diff = places.easy;
+  distanceSet();
 }
 
 function medPos(){
-  pano.setPosition(places.medium[viewNum]);
+  diff = places.medium;
+  distanceSet();
 }
 
 function hardPos(){
-  pano.setPosition(places.hard[viewNum]);
+  diff = places.hard;
+  distanceSet();
 }
 
 function newViews(){
@@ -64,4 +70,19 @@ function newViews(){
   if(viewNum>places.easy.length-1){
     viewNum = 0;
   }
+  distanceSet();
+}
+
+function distanceSet(){
+  pano.setPosition(diff[viewNum]);
+  distance = {
+    distanceLat:Math.abs(pos.lat-diff[viewNum].lat),
+    distanceLng:Math.abs(pos.lng-diff[viewNum].lng)
+    }
+    print(distance);
+    var meterDist = 111111*sqrt(sq(distance.distanceLng)+sq(distance.distanceLat));
+    document.getElementById("meters").innerHTML = round(meterDist) + "m";
+    if(meterDist<600){
+      document.getElementById("meters").innerHTML = round(meterDist) + " " + diff[viewNum].message ;
+    }
 }
