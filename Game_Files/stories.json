@@ -1,0 +1,27 @@
+{
+	"stories":[
+		{
+			"title":"The Test Title",
+			"places":[
+				{
+					"chapter":"Begining Place",
+					"text":"Go to the second place!?",
+					"lat":"Null",
+					"lng":"Null"
+				},
+				{
+					"chapter":"The first place",
+					"text":"Here is the place we are that is here isn't it amazing?",
+					"lat":42.340525,
+					"lng":-71.094557
+				},
+				{
+					"chapter":"Huntington",
+					"text":"This is huntingtion ave, isn't that interesting",
+					"lat":42.340558,
+					"lng":-71.088446
+				}
+			]
+		}
+	]
+}
