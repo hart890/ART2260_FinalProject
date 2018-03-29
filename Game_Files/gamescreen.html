@@ -15,14 +15,21 @@
 			<a id = "meters"></a>
 		</div>
 		<div class="gamebox">
-			<div class = "buttons">
-				<input type="button" value="Easy" id ="easy" onclick = "easyPos();"></input>
-				<input type="button" value="Medium" id ="med" onclick = "medPos();"></input>
-				<input type="button" value="Hard" id ="hard" onclick = "hardPos();"></input>
-				<input type="button" value="Your Position" id ="back" onclick = "backHome();"></input>
-				<input type="button" value="New Views" id ="new" onclick = "newViews();"></input>
-			</div>
 			<div id = "pano"></div>
+			<div class = "text">
+				<h1 id = "chapterTitle">The begining place</h1>
+				<p id = "storyText">Hello there this is this thing that's here and it will be a long thing to fill the entire page up to a point</p>
+				<input type="button" value="Overlay Button" id ="easy" onclick = "on();">
+			</div>
+		</div>
+		<div id="overlay" onclick="off()">
+ 			 <div id="overlayText">
+ 			 	<div class = "gamebox">
+ 			 	<h1 id = "chapterTitleInside">The begining place</h1>
+				<p id = "storyTextInside">Hello there this is this thing that's here and it will be a long thing to fill the entire page up to a point</p>
+ 			 	<input type="button" value="To Next Place" id ="back" onclick = "nextPlace();">
+ 			 	</div>
+ 			 </div>
 		</div>
 		<script async defer
     		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdPJqw_Exi0ILRRwsibtPaG3glvH4Kb24&callback=initMap">

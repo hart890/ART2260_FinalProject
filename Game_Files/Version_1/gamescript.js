@@ -1,20 +1,18 @@
 //Setting Variables
-var pano,stories,distanceLat,distanceLng,diff;
+var pano,places,distanceLat,distanceLng,diff;
 //Distance to Location
 var distance = {};
 //Player's Position
 var pos = {};
-var chapNum = 0;
+var viewNum = 0;
 //Loads in the places.json
 function preload(){
-  stories = loadJSON("stories.json");
+places = loadJSON("places.json");
 }
 
 function setup(){
   //For testing
   print("done");
-  placeSet();
-  print(stories.stories[0])
 }
 
 function initMap() {
@@ -33,10 +31,9 @@ function initMap() {
       showRoadLabels: false
     }
   );
-  //Sets Text
   //Finds Location
   if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(function(position) {
+    navigator.geolocation.watchCurrentPosition(function(position) {
       pos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude
@@ -59,28 +56,44 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
 }
-
-function placeSet(){
-  print(chapNum);
-  document.getElementById('chapterTitle').innerHTML = stories.stories[0].places[chapNum].chapter;
-  document.getElementById('storyText').innerHTML = stories.stories[0].places[chapNum].text;
-  pano.setPosition(stories.stories[0].places[chapNum+1]);
+//Your Position Button
+function backHome(){
+  pano.setPosition(pos);
 }
-
-function nextPlace(){
-  if(chapNum<stories.stories[0].places.length-1){
-    chapNum++;
+// Easy Button
+function easyPos(){
+  diff = places.easy;
+  distanceSet();
+}
+//Medium Button
+function medPos(){
+  diff = places.medium;
+  distanceSet();
+}
+//Hard Button
+function hardPos(){
+  diff = places.hard;
+  distanceSet();
+}
+//New Veiws Button
+function newViews(){
+  viewNum++;
+  if(viewNum>places.easy.length-1){
+    viewNum = 0;
   }
-  placeSet();
+  distanceSet();
 }
-
-function on() {
-  placeSet();
-  document.getElementById('chapterTitleInside').innerHTML = stories.stories[0].places[chapNum+1].chapter;
-  document.getElementById('storyTextInside').innerHTML = stories.stories[0].places[chapNum+1].text;
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-    document.getElementById("overlay").style.display = "none";
+//Finds and Sets the distance between player and veiw
+function distanceSet(){
+  pano.setPosition(diff[viewNum]);
+  distance = {
+    distanceLat:Math.abs(pos.lat-diff[viewNum].lat),
+    distanceLng:Math.abs(pos.lng-diff[viewNum].lng)
+  }
+    print(distance);
+    var meterDist = 111111*sqrt(sq(distance.distanceLng)+sq(distance.distanceLat));
+    document.getElementById("meters").innerHTML = round(meterDist) + "m";
+    if(meterDist<600){
+      document.getElementById("meters").innerHTML = round(meterDist) + " " + diff[viewNum].message ;
+    }
 }
