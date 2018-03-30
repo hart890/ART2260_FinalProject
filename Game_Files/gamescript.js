@@ -30,7 +30,8 @@ function initMap() {
       linksControl: false,
       clickToGo: false,
       scrollWheel: false,
-      showRoadLabels: false
+      showRoadLabels: false,
+      keyboardShortcuts: false
     }
   );
   //Sets Text
@@ -42,7 +43,7 @@ function initMap() {
             lng: position.coords.longitude
           };
       //Sets Veiw at current location
-      pano.setPosition(pos);
+      //pano.setPosition(pos);
       //Manages errors if player doesn't choose to share location
   }, function() {
        handleLocationError(true,pano.getPosition());
