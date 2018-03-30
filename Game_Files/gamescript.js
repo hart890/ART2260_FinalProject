@@ -30,7 +30,8 @@ function initMap() {
       linksControl: false,
       clickToGo: false,
       scrollWheel: false,
-      showRoadLabels: false
+      showRoadLabels: false,
+      keyboardShortcuts: false
     }
   );
   //Sets Text

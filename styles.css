@@ -109,11 +109,11 @@ input:active{
 
 
  .gamebox {  
-    width:1000px;
-    height:500px;
+    width:60%;
+    height:60%;
+    left:calc(50% - 30%);
+    top:calc(50% - 30%);
     position: fixed;
-    left:calc(50% - 500px);
-    top:calc(50% - 250px);
     display:block;
    background-color:#A17B74;
  }
