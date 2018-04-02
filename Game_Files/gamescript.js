@@ -1,5 +1,5 @@
 //Setting Variables
-var pano,stories,distanceLat,distanceLng,diff;
+var pano,stories,distanceLat,distanceLng;
 //Distance to Location
 var distance = {};
 //Player's Position
@@ -15,6 +15,7 @@ function setup(){
   print("done");
   placeSet();
   print(stories.stories[0])
+  angleMode(DEGREES);
 }
 
 function initMap() {
@@ -42,6 +43,7 @@ function initMap() {
             lat: position.coords.latitude,
             lng: position.coords.longitude
           };
+      distanceSet();
       //Sets Veiw at current location
       //pano.setPosition(pos);
       //Manages errors if player doesn't choose to share location
@@ -84,4 +86,40 @@ function on() {
 
 function off() {
     document.getElementById("overlay").style.display = "none";
+}
+
+function distanceSet(){
+  distance = {
+    distanceLat:Math.abs(pos.lat-stories.stories[0].places[chapNum+1].lat),
+    distanceLng:Math.abs(pos.lng-stories.stories[0].places[chapNum+1].lng)
+  };
+    print(distance);
+    var meterDist = 111111*sqrt(sq(distance.distanceLng)+sq(distance.distanceLat));
+    document.getElementById("meters").innerHTML = round(meterDist) + "m " + direction();
+    if(meterDist<60){
+      on();
+    }
+}
+
+function direction(){
+  var direct = "West"
+  var pointing = atan2(stories.stories[0].places[chapNum+1].lat-pos.lat,stories.stories[0].places[chapNum+1].lng-pos.lng);
+  if(pointing >= -22.5 && pointing<22.5){
+    direct = "East";
+  }else if(pointing>=22.5 && pointing< 67.5){
+    direct = "North East";
+  }else if(pointing>= 67.5 && pointing<112.5){
+    direct = "North";
+  }else if(pointing>= 122.5 && pointing<157.5){
+    direct = "North West";
+  }else if(pointing >= -67.5 && pointing< -22.5){
+    direct = "South East";
+  }else if(pointing >= -112.5 && pointing< -67.5){
+    direct = "South";
+  }else if(pointing >= -157.5 && pointing< -122.5){
+    direct = "South West";
+  }else{
+    direct = "West"
+  }
+  return(direct);
 }
