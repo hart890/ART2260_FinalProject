@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GeoTales: Tale Creation</title>
+		<link rel = "stylesheet" href = "creationStyle.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<script type="text/javascript" src = "creation.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class = "nav">
+	  		<a href="Game_Files/gamescreen.html">The Project</a>
+			<a href="about_finalproject.html">About</a>
+	      	<a href="proofofconcept.html">Proof Of Concept</a>
+	 	</div>
+		<div class = "containter-fluid mainPart">
+			<div class = "row">
+				<div class = "col-sm-1"></div>
+				<div class = "col-sm-4 inside">
+					<!-- Input -->
+					<input type = "text" placeholder="Chapter Title" id="chapTitle">
+					<textarea id = "chapText"></textarea>
+				</div>
+				<div class="col-sm-6 inside">
+					<div id = "map">
+						<!-- Map -->
+					</div>
+					<div>
+						<!-- Buttons -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<script async defer
+    		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdPJqw_Exi0ILRRwsibtPaG3glvH4Kb24&callback=initMap">
+    	</script>
+	</body>
+</html>

@@ -10,25 +10,25 @@
 	</head>
 	<body>
 		<div class = "nav">
-			<a href="../about_finalproject.html">About</a>
 			<a href="../index.html" id = "tes">Home</a>
+			<a href="../about_finalproject.html">About</a>
 			<a id = "meters"></a>
 		</div>
 		<div class="gamebox">
 			<div id = "pano"></div>
-			<div class = "text">
+			<div class = "text largeText">
 				<h1 id = "chapterTitle">Loading...</h1>
 				<p id = "storyText">Loading...</p>
-				<input type="button" value="Overlay" id ="easy" onclick = "on();">
+				<button id ="easy" onclick = "on();">Overlay</button>
 			</div>
 		</div>
-		<div id="overlay" onclick="off()">
- 			 <div id="overlayText">
- 			 	<div class = "overlaybox">
-	 			 	<h1 id = "chapterTitleInside">Loading...</h1>
-					<p id = "storyTextInside">Loading...</p>
-	 			 	<input type="button" value="To Next Place" id ="back" onclick = "nextPlace();">
- 			 	</div>
+		<div id="overlay">
+ 			 <div id="overlayBox">
+ 			 	<div class = "largeText" style = "height:75%">
+	 			 	<h1 id = "chapterTitleInside" class = "overlayElements">Loading...</h1>
+					<p id = "storyTextInside" class = "overlayElements">Loading...</p>
+				</div>
+	 			<button id ="back" onclick = "nextPlace(); off();">To Next Place</button>
  			 </div>
 		</div>
 		<script async defer
