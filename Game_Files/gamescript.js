@@ -124,21 +124,3 @@ function direction(){
   return(direct);
 }
 
-function refresh(){
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      pos = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude
-          };
-      distanceSet();
-      //Sets Veiw at current location
-      //pano.setPosition(pos);
-      //Manages errors if player doesn't choose to share location
-  }, function() {
-       handleLocationError(true,pano.getPosition());
-      });
-  } else {
-  handleLocationError(false, pano.getPosition());
-  }
-}
