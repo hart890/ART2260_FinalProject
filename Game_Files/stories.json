@@ -1,6 +1,47 @@
 {
 	"stories":[
 		{
+			"title":"The Ghost Hunter",
+			"places":[
+				{
+					"chapter":"The Phone Rings",
+					"text":"“Hello? This is Joseph Aoun. I think there is a ghost haunting the Northeastern campus. Will you be willing to investigate? Head to the rendezvous point to beign.",
+					"lat":"Null",
+					"lng":"Null"
+				},
+				{
+					"chapter":"Meet With Aoun",
+					"text":"Wow, that was quick. Students have been seeing a ghost of a woman in a black robe around campus, especially near the arts buildings. *Ghostly Howl* “Well you better head on your way. Thank you for your help!",
+					"lat":42.340065,
+					"lng":-71.088218
+				},
+				{
+					"chapter":"Investigation begins!",
+					"text":"You arrive at Snell Library where you meet with a group of freshman to hear their takes:<br><br>“I keep hearing these songs around when I walk to class. This ghost must be really sad.”<br><br>“I can feel a rush of cold when walking from quad to quad.”<br><br>“I noticed that splotches of paint have been left on the roads. No idea where that came from.”",
+					"lat":42.338618,
+					"lng":-71.088699
+				},
+				{
+					"chapter":"Ghostly Happenings",
+					"text":"As you approach the Egan Research Center, you hear a sad song and see blotches of paint along the road leading to Centennial Quad. The words of the song become clearer:<br><i>'A hundred months have passed, Lorena,<br>Since last I held thy hand in mine;<br>And felt the pulse beat fast, Lorena,<br>Though mine beat faster far than thine;<br>A hundred months,'twas flowery May,<br>When up the hilly slope we climbed,<br>To watch the dying of the day,<br>And hear the distant church bells chime.’<br></i><br><br>A song from the Civil War? You continue to investigate.",
+					"lat":42.337667,
+					"lng":-71.088893
+				},
+				{
+					"chapter":"The Woman In Black",
+					"text":"Outside of Ruggles, the song becomes louder. You notice a man standing outside of Ruggles with a stack of pamphlets. You shrug it off until he stops you and says “Melanie.” You ask him what he means. The man looks at you and says<br>“It’s her. It’s the Woman in Black. She’s come looking for her husband.”<br>You look at him confused.<br>“Melanie Lanier was the wife of a confederate soldier held in the Boston Harbor prison called George’s Island. In an effort to rescue him, she accidentally killed him. She was tried and hanged by the Union Soldiers.”<br>You ask him why she would come to Northeastern.<br>“She’s searching for the soul of her dead husband anywhere she can. Help her.”",
+					"lat":42.3366467,
+					"lng":-71.08940669999998
+				},
+				{
+					"chapter":"The Final Countdown",
+					"text":"You enter Ryder Hall and the voice in the song is right in front of you. On the stairs you see a black figure. You call to her and she faces you. You hear a loud groan emerge from the ghost’s mouth.<br><br>You tell her that you know where her husband is. She turns to look at you and a demureness comes back to her face.<br><i>Andrew…</i><br>You ask her to follow you and you gently take out your ghost ray. You suck her into the ghost ray and she drones while a cyclone of light encompasses her.<br>Aoun comes through the door behind you.<br>'Ah thank you! You have caught the ghost! For your compensation I have awarded you the key to Northeastern. Use it wisely. Thanks again.'",
+					"lat":42.336605,
+					"lng":-71.09085
+				}
+			]
+		},
+		{
 			"title":"The Test Title",
 			"places":[
 				{
