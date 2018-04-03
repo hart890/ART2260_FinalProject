@@ -1,17 +1,4 @@
-body {
-margin:0px;
-color:{color:text};
-font-family:'Roboto';
-font-size:8px;
-line-height:16px;
-line-height:150%;
-background-attachment:fixed;
-background-repeat:no-repeat;
-background-size:cover;
-background-color:#f6f6f6;
-}
-
-input{
+button{
     font-family:"Roboto";
     font-weight: bold;
     border:none;
@@ -19,9 +6,14 @@ input{
     height:18%;
     width:92%;
     margin-top: 4%;
+    margin-bottom:2%;
     margin-left:4%;
-    font-size: 40px;
+    font-size: 250%;
     border-radius:4px;
+}
+
+a{
+    text-decoration: none;
 }
 
 #overlay {
@@ -35,46 +27,67 @@ input{
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
-    cursor: pointer;
 }
 
-#overlayText{
+#overlayBox {
     position: absolute;
-    top: 50%;
-    left: 40%;
-    font-size: 20px;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+    margin:0%;
+    padding:1%;
+    left:11%;
+    top:11%;
+    bottom:11%;
+    width:76%;
+    height:74%;
+    font-size: 28px;
+    background-color:#A17B74;
 }
 
 #pano{
     height:100%;
-    width:80%;
+    width:75%;
     float:left;
 }
 
+#chapterTitleInside{
+    color:#212E3E;
+}
+
 .gamebox {  
-    width:60%;
-    height:60%;
+    width:80%;
+    height:80%;
     position: fixed;
-    left:20%;
-    top:20%;
+    left:10%;
+    top:10%;
     display:block;
    background-color:#A17B74;
  }
 
- .overlaybox{  
-    width:200%;
-    height:500%;
-   background-color:#A17B74;
- }
+.overlayElements {
+    margin:1%;
+}
 
-.text
-{
-    width:20%;
+.text {
+    width:25%;
     height:100%;
     float:left;
+}
+
+.largeText{
+    overflow-y:scroll;
+}
+
+.nav {
+margin-left:10%;
+margin-top:2%;
+background-color: white;
+position:absolute;
+font:bold 14px 'Helvetica';
+text-transform:uppercase;
+letter-spacing:1px;
+text-align:left;
+z-index:99999999999999;
+display:inline;
+text-decoration:none;
 }
 
 #easy {
@@ -91,6 +104,7 @@ input{
 
 #back {
     background-color: #055E7C;
+    float: bottom;
     font-size: 28px;
 }
 
