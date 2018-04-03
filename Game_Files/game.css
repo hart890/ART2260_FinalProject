@@ -16,6 +16,11 @@ a{
     text-decoration: none;
 }
 
+img{
+    height:100%;
+    width:100%;
+}
+
 #overlay {
     position: fixed;
     display: none;
@@ -52,6 +57,14 @@ a{
     color:#212E3E;
 }
 
+#refresh{
+    position: absolute;
+    background-color:#009131;
+    margin-left:88%;
+    height:8%;
+    width:8%;
+    margin-top:0%;
+}
 .gamebox {  
     width:94%;
     height:80%;
