@@ -5,6 +5,7 @@ var distance = {};
 //Player's Position
 var pos = {};
 var chapNum = 0;
+var range = 40;
 //Loads in the places.json
 function preload(){
   stories = loadJSON("stories.json");
@@ -96,7 +97,7 @@ function distanceSet(){
     print(distance);
     var meterDist = 111111*sqrt(sq(distance.distanceLng)+sq(distance.distanceLat));
     document.getElementById("meters").innerHTML = round(meterDist) + "m " + direction();
-    if(meterDist<60){
+    if(meterDist<range){
       on();
     }
 }

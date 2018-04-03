@@ -44,7 +44,7 @@ a{
 
 #pano{
     height:100%;
-    width:75%;
+    width:65%;
     float:left;
 }
 
@@ -53,10 +53,10 @@ a{
 }
 
 .gamebox {  
-    width:80%;
+    width:94%;
     height:80%;
     position: fixed;
-    left:10%;
+    left:3%;
     top:10%;
     display:block;
    background-color:#A17B74;
@@ -67,7 +67,7 @@ a{
 }
 
 .text {
-    width:25%;
+    width:35%;
     height:100%;
     float:left;
 }
