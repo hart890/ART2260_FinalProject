@@ -1,0 +1,114 @@
+button{
+    font-family:"Roboto";
+    font-weight: bold;
+    border:none;
+    color:white;
+    height:18%;
+    width:92%;
+    margin-top: 4%;
+    margin-bottom:2%;
+    margin-left:4%;
+    font-size: 250%;
+    border-radius:4px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+#overlayBox {
+    position: absolute;
+    margin:0%;
+    padding:1%;
+    left:11%;
+    top:11%;
+    bottom:11%;
+    width:76%;
+    height:74%;
+    font-size: 28px;
+    background-color:#A17B74;
+}
+
+#pano{
+    height:100%;
+    width:65%;
+    float:left;
+}
+
+#chapterTitleInside{
+    color:#212E3E;
+}
+
+.gamebox {  
+    width:94%;
+    height:80%;
+    position: fixed;
+    left:3%;
+    top:10%;
+    display:block;
+   background-color:#A17B74;
+ }
+
+.overlayElements {
+    margin:1%;
+}
+
+.text {
+    width:35%;
+    height:100%;
+    float:left;
+}
+
+.largeText{
+    overflow-y:scroll;
+}
+
+.nav {
+margin-left:10%;
+margin-top:2%;
+background-color: white;
+position:absolute;
+font:bold 14px 'Helvetica';
+text-transform:uppercase;
+letter-spacing:1px;
+text-align:left;
+z-index:99999999999999;
+display:inline;
+text-decoration:none;
+}
+
+#easy {
+    background-color:#009131;
+}
+ 
+#med {
+    background-color: #C66600;
+}
+
+#hard {
+    background-color: #C61F00;
+}
+
+#back {
+    background-color: #055E7C;
+    float: bottom;
+    font-size: 28px;
+}
+
+#new {
+    background-color: #69B500;
+    font-size:35px;
+}

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Geo Find</title>
-		<link rel = "stylesheet" href = "../styles.css">
+		<title>GeoTales</title>
+		<link rel = "stylesheet" href = "game.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
@@ -10,18 +10,26 @@
 	</head>
 	<body>
 		<div class = "nav">
-			<a href="../about_finalproject.html">About</a>
 			<a href="../index.html" id = "tes">Home</a>
+			<a href="../about_finalproject.html">About</a>
+			<a id = "meters"></a>
 		</div>
 		<div class="gamebox">
-			<div class = "buttons">
-				<input type="button" value="Easy" id ="easy" onclick = "easyPos();"></input>
-				<input type="button" value="Medium" id ="med" onclick = "medPos();"></input>
-				<input type="button" value="Hard" id ="hard" onclick = "hardPos();"></input>
-				<input type="button" value="Your Position" id ="back" onclick = "backHome();"></input>
-				<input type="button" value="New Veiws" id ="new" onclick = "newViews();"></input>
-			</div>
 			<div id = "pano"></div>
+			<div class = "text largeText">
+				<h1 id = "chapterTitle">Loading...</h1>
+				<p id = "storyText">Loading...</p>
+				<!--<button id ="easy" onclick = "on();">Overlay</button>-->
+			</div>
+		</div>
+		<div id="overlay">
+ 			 <div id="overlayBox">
+ 			 	<div class = "largeText" style = "height:75%">
+	 			 	<h1 id = "chapterTitleInside" class = "overlayElements">Loading...</h1>
+					<p id = "storyTextInside" class = "overlayElements">Loading...</p>
+				</div>
+	 			<button id ="back" onclick = "nextPlace(); off();">To Next Place</button>
+ 			 </div>
 		</div>
 		<script async defer
     		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdPJqw_Exi0ILRRwsibtPaG3glvH4Kb24&callback=initMap">

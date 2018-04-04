@@ -23,7 +23,20 @@
     width:80%;
     float:left;
 }
- 
+
+#overlay {
+    position: fixed;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlayText{
+    position: absolute;
+    font-size: 20px;
+    color: black;
+}
  
 .tmblr-iframe{ white-space:nowrap; -webkit-filter: invert(100%); -moz-filter: invert(100%); -o-filter: invert(100%); -ms-filter: invert(100%); filter: invert(100%);opacity:.2;transition: .4s ease-in-out; -webkit-transition: .4s ease-in-out;-moz-transition: .4s ease-in-out;-o-transition: .4s ease-in-out;position:fixed!important;right:-20px!important;transform:scale(0.7,0.7); }
  
@@ -86,13 +99,12 @@ input:active{
 
 
  .gamebox {  
-    width:1000px;
-    height:500px;
+    width:60%;
+    height:60%;
+    left:calc(50% - 30%);
+    top:calc(50% - 30%);
     position: fixed;
-    left:calc(50% - 500px);
-    top:calc(50% - 250px);
     display:block;
-   z-index:9999999;
    background-color:#A17B74;
  }
  
@@ -192,7 +204,7 @@ padding:4px;
 color:#000;
 }
 
-.buttons 
+.text
 {
     width:20%;
     height:100%;
