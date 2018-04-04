@@ -8,8 +8,8 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 200px;
-        width: 200px;
+        height: 500px;
+        width: 500px;
       }
     </style>
   </head>
@@ -35,7 +35,7 @@
 
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
+          navigator.geolocation.watchPosition(function(position) {
             var pos = {
               lat: position.coords.latitude,
               lng: position.coords.longitude
@@ -51,7 +51,8 @@
             }
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
-          });
+          },
+          {enableHighAccuracy: true});
         } else {
           // Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
