@@ -12,17 +12,40 @@
 
   <link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="fullPage/examples/examples.css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
   <style>
 
   /* Style for our header texts
   * --------------------------------------- */
   h1{
     font-size: 5em;
-    font-family: arial,helvetica;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #000;
+    margin:0;
+    padding:10;
+  }
+
+  h3{
+    font-size: 2em;
+    font-family: 'Nanum Myeongjo', serif;
     color: #000;
     margin:0;
     padding:0;
   }
+
+  .button {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #000;
+}
 
   /* Centered texts in each section
   * --------------------------------------- */
@@ -47,7 +70,7 @@
     background-image: url(fullPage/examples/imgs/paper.jpg);
   }
   #section0 h1{
-    top: 50%;
+    top: 20%;
     transform: translateY(-50%);
     position: relative;
   }
@@ -67,11 +90,11 @@
   /*Adding background for the slides
   * --------------------------------------- */
   #slide1{
-    background-image: url(fullPage/examples/imgs/bg2.jpg);
+    background-image: url(fullPage/examples/imgs/paper.jpg);
     padding: 6% 0 0 0;
   }
   #slide2{
-    background-image: url(fullPage/examples/imgs/bg5.jpg);
+    background-image: url(fullPage/examples/imgs/paper.jpg);
     padding: 6% 0 0 0;
   }
 
@@ -113,18 +136,39 @@
 
 
 <div id="fullpage">
-  <div class="section " id="section0"><h1>GeoTales</h1></div>
+  <div class="section " id="section0">
+    <!-- <h1>GeoTales</h1> -->
+    <h1><br></h1>
+    <h3><br></h3>
+    <img src="geotales.svg" style="width:45%">
+    <!-- <h3>The quest is real.</h3> -->
+    
+  </div>
   <div class="section" id="section1">
-    <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
-    <div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+    <div class="slide" id="slide1">
+      <h1>How to Play</h1>
+      <h3><br>Follow along with your phone<br> to preset stories
+       all around Boston<br> (or create your own adventure!) </h3>
+    </div>
+    <div class="slide" id="slide2">
+      <h1>More About This Project</h1>
+      <h3><br></h3>
+      <button class="button">About</button>
+    </div>
   </div>
   <div class="section" id="section2">
-    <h1>How to Play</h1>
-    <p>(button for about page goes here) </p>
+    <h1>Choose a Story...</h1>
+    <h3><br></h3>
+    <button class="button">Demo Game</button>
+    <h3><br></h3>
+    <button class="button">Demo Game</button>
+    <h3><br></h3>
+    <button class="button">Demo Game</button>
   </div>
   <div class="section" id="section3">
-    <h1>Choose a Story...</h1>
-    <p>Or create your own</p>
+    <h1>Or create your own!</h1>
+    <h3><br></h3>
+    <button class="button">Click Me!</button>
   </div>
 </div>
 
