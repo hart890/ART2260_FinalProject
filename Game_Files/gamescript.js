@@ -5,7 +5,7 @@ var distance = {};
 //Player's Position
 var pos = {};
 var chapNum = 0;
-var range = 40;
+var range = 45;
 //Loads in the places.json
 function preload(){
   stories = loadJSON("stories.json");
