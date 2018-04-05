@@ -1,18 +1,34 @@
+textarea{
+	resize: none;
+}
+
+button{
+	height:100px;
+	width:100%;
+}
+
 #chapTitle{
 	width:100%;
-	height:50px;
-	margin:10px;
+	height:100px;
+	font: bold 40px "Helvetica";
 }
 #chapText{
 	positon:absolute;
-	margin:10px;
+	font: 20px "Helvetica";
+	margin-bottom:40px;
+	margin-top:10px;
 	width:100%;
-	height:100%;
+	height:550px;
 }
 
 #map{
 	width:100%;
 	height:500px;
+}
+#pano{
+	margin-top:10px;
+	width:100%;
+	height:192px;
 }
 .nav { 
 	margin:30px;

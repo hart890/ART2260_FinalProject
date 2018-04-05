@@ -95,6 +95,7 @@ function distanceSet(){
     distanceLat:Math.abs(pos.lat-stories.stories[0].places[chapNum+1].lat),
     distanceLng:Math.abs(pos.lng-stories.stories[0].places[chapNum+1].lng)
   };
+  print("Distance Set");
     var meterDist = 111111*sqrt(sq(distance.distanceLng)+sq(distance.distanceLat));
     document.getElementById("meters").innerHTML = round(meterDist) + "m " + direction();
     if(meterDist<range){
