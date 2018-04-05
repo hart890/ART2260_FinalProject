@@ -13,6 +13,7 @@ function preload(){
 
 function setup(){
   //For testing
+   createCanvas(0,0);
   print("done");
   placeSet();
   print(stories.stories[0])
