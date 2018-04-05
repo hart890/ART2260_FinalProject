@@ -5,9 +5,20 @@ Elijah Cobb
 Isa Diaz  
 Sara Hartleben 
 
-Code Referenced:   
-https://developers.google.com/maps/documentation/javascript/streetview - For all the street veiw stuff
-https://developers.google.com/maps/documentation/javascript/geolocation - Location
+API's and Libraries Used:
+Google Maps Javascript API - https://developers.google.com/maps/documentation/javascript/
+Google Fonts - https://fonts.google.com/
+HTML 5 Geolocation
+fullpage
+p5
+bootstrap
+jquery
+
+This project is written in:
+Javascript
+HTML
+CSS
+JSON
 
 Strech Goals:  
 Shift the project from a class project to a fully fledged website, including the ability to make customs tales and make the whole thing work better.
