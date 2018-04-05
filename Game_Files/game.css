@@ -1,5 +1,5 @@
 button{
-    font-family:"Roboto";
+    font-family: 'Nanum Myeongjo', serif;
     font-weight: bold;
     border:none;
     color:white;
@@ -38,6 +38,7 @@ a{
     bottom:11%;
     width:76%;
     height:74%;
+    font-family: 'Nanum Myeongjo', serif;
     font-size: 28px;
     background-color:#A17B74;
 }
@@ -49,6 +50,7 @@ a{
 }
 
 #chapterTitleInside{
+    font-family: 'Nanum Myeongjo', serif;
     color:#212E3E;
 }
 
@@ -70,24 +72,33 @@ a{
     width:35%;
     height:100%;
     float:left;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 .largeText{
     overflow-y:scroll;
 }
 
-.nav {
-margin-left:10%;
-margin-top:2%;
-background-color: white;
-position:absolute;
-font:bold 14px 'Helvetica';
-text-transform:uppercase;
-letter-spacing:1px;
-text-align:left;
-z-index:99999999999999;
-display:inline;
-text-decoration:none;
+.navElements{
+}
+
+.nav { 
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-align:center;
+    color:;
+    z-index:99999999999999;
+    width:450px;
+    display:inline;
+ }
+ 
+.nav a {
+    color:#000;
+    padding:5px;
+    width:450px;
+    z-index:9999999999999;
 }
 
 #easy {
