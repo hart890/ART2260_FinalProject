@@ -23,3 +23,4 @@ JSON
 Strech Goals:  
 Shift the project from a class project to a fully fledged website, including the ability to make customs tales and make the whole thing work better.
 https://hart890.github.io/ART2260_FinalProject/
+
