@@ -1,3 +1,7 @@
+body{
+    overflow-y: hidden;
+}
+
 button{
     font-family: 'Nanum Myeongjo', serif;
     font-weight: bold;
@@ -59,9 +63,9 @@ a{
     height:80%;
     position: fixed;
     left:3%;
-    top:10%;
+    top:80px;
     display:block;
-   background-color:#A17B74;
+   background-color:#f9f4ca;
  }
 
 .overlayElements {

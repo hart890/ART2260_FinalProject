@@ -1,3 +1,8 @@
+body{
+	overflow-x: hidden;
+	
+}
+
 textarea{
 	resize: none;
 }
@@ -54,7 +59,7 @@ button{
 }
 
 .inside{
-	background-color: #C5A49D;
+	background-color: #f9f4ca;
 	height:100%;
 }
 
@@ -63,6 +68,6 @@ button{
 }
 
 .mainPart{
-	background-color:#A17B74; 
+	background-color:#c1ba81; 
 	positon:absolute;
 }
