@@ -73,9 +73,10 @@ a{
 }
 
 .text {
-    width:35%;
+    width:33%;
     height:100%;
     float:left;
+    padding:1%;
     font-family: 'Nanum Myeongjo', serif;
 }
 
