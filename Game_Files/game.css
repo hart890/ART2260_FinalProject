@@ -55,7 +55,8 @@ a{
 
 #chapterTitleInside{
     font-family: 'Nanum Myeongjo', serif;
-    color:#212E3E;
+    /*color:#212E3E;*/
+    color:#000;
 }
 
 .gamebox {  
@@ -65,7 +66,9 @@ a{
     left:3%;
     top:80px;
     display:block;
-   background-color:#f9f4ca;
+   /*background-color:#f9f4ca;*/
+   /*background-color:#000;*/
+   background-image: url("../fullPage/examples/imgs/paper.jpg");
  }
 
 .overlayElements {
@@ -119,12 +122,14 @@ a{
 }
 
 #back {
-    background-color: #055E7C;
+    /*background-color: #055E7C;*/
+    background-color: #000;
     float: bottom;
     font-size: 28px;
 }
 
 #new {
-    background-color: #69B500;
+    /*background-color: #69B500;*/
+    background-color: #000;
     font-size:35px;
 }

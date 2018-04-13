@@ -1,5 +1,6 @@
 body{
 	overflow-x: hidden;
+	height: 100%;
 	
 }
 
@@ -59,7 +60,7 @@ button{
 }
 
 .inside{
-	background-color: #f9f4ca;
+	/*background-color: #f9f4ca;*/
 	height:100%;
 }
 
@@ -67,7 +68,20 @@ button{
 	height:100%;
 }
 
-.mainPart{
+/*.mainPart{
 	background-color:#c1ba81; 
 	positon:absolute;
+}*/
+
+.bg { 
+    /* The image used */
+    background-image: url("../fullPage/examples/imgs/paper.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
