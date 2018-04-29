@@ -104,6 +104,21 @@
   #infoMenu li a {
     color: #000;
   }
+  .arrowDown{
+    position:fixed;
+    z-index:99;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-left: -38px;
+    left: 50%;
+}
+.arrowDown{
+    bottom: 20px;
+    border-width: 38.5px 34px 0 38.5px;
+    border-color: #fff transparent transparent transparent;
+}
   </style>
 
   <!--[if IE]>
@@ -181,6 +196,11 @@
 
   </div>
 </div>
+<div class="arrowDown"></div>
+<script type="text/javascript">$('.arrowDown').click(function(){
+    $.fn.fullpage.moveSectionDown();
+}); </script>
+
 
 </body>
 </html>
